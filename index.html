@@ -3,91 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>43 José Bulnes Tarea1</title>
-</head>
-<body bgcolor="8f7b77">
-    <center><h1> Mi Perfil Personal </h1></center>
-    <table align="center">
-        <tr>
-            <td align="center"><img src="imagenes/fotodeperfil.jpg" width="20%"></td>
-        </tr>
-    </table>
-    <table border="1" align="center" cellspacing="0" width="60%" bordercolor="blue">
-        <tr>
-            <td colspan="2" height="70px" align="center" bgcolor="e80f4a"><b><font size="6">Información Personal</font></b></td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Nombre:</b></td>
-            <td bgcolor="0eead6">José Daniel Bulnes Montes</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Cuenta:</b></td>
-            <td bgcolor="0eead6">43</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Curso:</b></td>
-            <td bgcolor="0eead6">12 BTP</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Edad:</b></td>
-            <td bgcolor="0eead6">17</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Ubicación:</b></td>
-            <td bgcolor="0eead6">Comayagua, Honduras</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>No. Identidad:</b></td>
-            <td bgcolor="0eead6">0301200800545</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Teléfono:</b></td>
-            <td bgcolor="0eead6">3159-0715</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Dirrección:</b></td>
-            <td bgcolor="0eead6">jose.bulnes.00545@maristascomayagua.edu.hn</td>
-        </tr>
-        <tr height="30px" width="250px">
-            <td bgcolor="eed907"><b>Altura:</b></td>
-            <td bgcolor="0eead6">1.77 Metros</td>
-        </tr>
-    </table>
-    <table border="1" align="center" cellspacing="0" width="60%" bordercolor="green">
-        <tr>
-            <td colspan="2" height="70px" align="center" bgcolor="28ee01"><b><font size="6">Talentos e Intereses</font></b></td>
+    <title>Viajes y Naturaleza</title>
+    <style>
+        :root {
+            --colorFondo: #f5f5f5;
+            --colorHeader: #2c3e50;
+            --colorTexto: #333;
+            --colorBorde: #ddd;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--colorFondo);
+        }
+        
+        .encabezado {
+            background-color: var(--colorHeader);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .titulo {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contenido {
+            padding: 20px;
+        }
+        
+        .tarjetas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .tarjeta {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tarjeta img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .info-tarjeta {
+            padding: 15px;
+        }
+        
+        .info-tarjeta h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .info-tarjeta p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .tabla th {
+            background-color: var(--colorHeader);
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+        
+        .tabla td {
+            padding: 10px;
+            border-bottom: 1px solid var(--colorBorde);
+        }
+        
+        .tabla tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 768px) {
+            .tarjetas {
+                flex-direction: column;
+            }
             
-        </tr>
-        <tr>
-            <td align="center" bgcolor="ee01d8"><b>TALENTOS</b></td>
-            <td align="center" bgcolor="ff9700"><b>INTERESES</b></td>
-        </tr>
-        <tr>
-            <td bgcolor="ee01d8">
-                <ul>
-                    <li>Progrmador</li>
-                    <li>Diseñador</li>
-                    <li>Biker</li>
-                    <li>Lector</li>
-                </ul>
-            </td>
-            <td bgcolor="ff9700">
-                <ul>
-                    <li>Mora</li>
-                    <li>Moto Cross</li>
-                    <li>Video Juegos</li>
-                    <li>Música</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <table border="1" align="center" cellspacing="0" width="60%" bordercolor="red">
-        <tr>
-            <td height="70px" align="center" bgcolor="ff0400"><b><font size="6">Redes Sociales</font></td>
-        </tr>
-        <tr>
-            <td height="40px" align="center" bgcolor="21d900"><a target="_blank" href="https://www.instagram.com/_bulnes_/">Instragram</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://wa.me/50431590715">Whatsapp</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.tiktok.com/@j._bulnes">Tik Tok</a></td>
-        </tr>
-    </table>
+            .menu {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <h1 class="titulo">Viajes y Naturaleza</h1>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Galería</a>
+            <a href="#">Destinos</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+    
+    <div class="contenido">
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="https://wallpapers.com/images/hd/beautiful-mountain-1920-x-1080-wallpaper-53ac31i8656cmsmq.jpg" alt="Montañas">
+                <div class="info-tarjeta">
+                    <h2>Paisajes de Montaña</h2>
+                    <p>Impresionantes vistas de cordilleras y picos nevados.</p>
+                </div>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="https://humanidades.com/wp-content/uploads/2018/08/bosque-1-e1577589217640.jpg" alt="Bosque">
+                <div class="info-tarjeta">
+                    <h2>Bosques Misteriosos</h2>
+                    <p>Explorando la tranquilidad de los bosques antiguos.</p>
+                </div>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/vfwswe246nyy2fd3v8kt" alt="Playa">
+                <div class="info-tarjeta">
+                    <h2>Costas Paradisíacas</h2>
+                    <p>Playas de arena blanca y aguas cristalinas.</p>
+                </div>
+            </div>
+        </div>
+        
+        <table class="tabla">
+            <tr>
+                <th>Destino</th>
+                <th>País</th>
+                <th>Dificultad</th>
+                <th>Temporada Recomendada</th>
+            </tr>
+            <tr>
+                <td>Machu Picchu</td>
+                <td>Perú</td>
+                <td>Alta</td>
+                <td>Mayo - Septiembre</td>
+            </tr>
+            <tr>
+                <td>Glaciares de Patagonia</td>
+                <td>Argentina</td>
+                <td>Media</td>
+                <td>Diciembre - Febrero</td>
+            </tr>
+            <tr>
+                <td>Islas Galápagos</td>
+                <td>Ecuador</td>
+                <td>Baja</td>
+                <td>Todo el año</td>
+            </tr>
+            <tr>
+                <td>Torres del Paine</td>
+                <td>Chile</td>
+                <td>Alta</td>
+                <td>Noviembre - Marzo</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
